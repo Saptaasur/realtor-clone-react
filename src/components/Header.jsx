@@ -26,7 +26,7 @@ export default function Header() {
             <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMatchRoute("/offers") && "text-black border-b-red-400"}`}onClick={()=>navigate("/offers")}>
               Offers
             </li>
-            <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMatchRoute("/signin")&& "text-black border-b-red-400"}`}onClick={()=>navigate("/signin")}>
+            <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMatchRoute("/SignIn")&& "text-black border-b-red-400"}`}onClick={()=>navigate("/SignIn")}>
               Sign In
             </li>
           </ul>
