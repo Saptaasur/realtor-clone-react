@@ -232,10 +232,10 @@ async function onSubmit(e){
           <div>
           <p className="text-lg font-semibold">Regular Price</p>
              <div className="flex w-full justify-center items-center space-x-6">
-            <input type="number" id="regularPrice" value={regularPrice} onChange={onChange} min="10000" max="200000" required className="w-full px-4 py-2 text-lg tex-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
+            <input type="number" id="regularPrice" value={regularPrice} onChange={onChange} min="10000" max="2000000" required className="w-full px-4 py-2 text-lg tex-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
           {type === "rent" &&(
             <div>
-              <p className="text-md w-full whitespace-nowrap">Rs / Month</p>
+              <p className="text-md w-full whitespace-nowrap">Rs. / Month</p>
             </div>
           )}
           </div> 
@@ -245,10 +245,10 @@ async function onSubmit(e){
           <div className="">
           <p className="text-lg font-semibold">Discounted Price</p>
              <div className="flex w-full justify-center items-center space-x-6">
-            <input type="number" id="discountedPrice" value={discountedPrice} onChange={onChange} min="0" max="200000" required={offer} className="w-full px-4 py-2 text-lg tex-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
+            <input type="number" id="discountedPrice" value={discountedPrice} onChange={onChange} min="0" max="200000" required={offer} className="w-full px-4 py-2 text-lg text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"/>
           {type === "offer" &&(
             <div>
-              <p className="text-md w-full whitespace-nowrap">Rs / Month</p>
+              <p className="text-md w-full whitespace-nowrap">Rs. / Month</p>
             </div>
           )}
           </div> 
